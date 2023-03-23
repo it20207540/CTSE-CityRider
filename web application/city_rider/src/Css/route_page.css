@@ -1,0 +1,91 @@
+.clearfix {
+  overflow: auto;
+}
+.routes-container {
+  width: 22%;
+  height: 100vh;
+  background-color: #b1cbcd;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.routes-topic-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.routes-search-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+.routes-search-box {
+  width: 100%;
+  height: 33px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.routes-create-icon{
+cursor: pointer;
+}
+.routes-create-icon:hover{
+    background-color:aliceblue;
+    border-radius: 50px;
+}
+.routes-details-wrapper{
+  width: 100%;
+  height: 82vh;
+  margin-top: 20px;
+  overflow: auto;
+}
+ .routes-details-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.routes-form-container{
+  width: 100%;
+  margin-top: 30px;
+}
+.routes-input-container{
+  margin-bottom: 12px;
+}
+.routes-label{
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.routes-input{
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.routes-btn-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.reg-btn{
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color:white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+.reg-btn:hover{
+   
+  background-color: rgb(26, 26, 26);
+  
+} 
+
+ 

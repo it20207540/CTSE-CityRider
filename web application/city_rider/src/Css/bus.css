@@ -1,0 +1,21 @@
+.bus-container {
+  width: 100%;
+  background-color: #51696c;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+}
+.bus-container:hover {
+  background-color: #44595c;
+}
+.bus-no {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+.bus-name {
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+}

@@ -1,0 +1,21 @@
+.route-container {
+  width: 100%;
+  background-color: #51696c;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+}
+.route-container:hover {
+  background-color: #44595c;
+}
+.route-no {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.route-name {
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+}
