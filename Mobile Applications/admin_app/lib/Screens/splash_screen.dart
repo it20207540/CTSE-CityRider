@@ -15,7 +15,7 @@ class _SplahScreenState extends State<SplahScreen> {
 
   Future<void> getData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    final String? nic = prefs.getString('nic');
+    final String? nic = prefs.getString('username');
     if (nic == null) {
       Future.delayed(
           const Duration(seconds: 2),

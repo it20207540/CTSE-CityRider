@@ -1,11 +1,15 @@
 import 'package:driver_app/Screens/QRScanner.dart';
 import 'package:driver_app/Screens/profile.dart';
 import 'package:driver_app/Screens/addRoutes.dart';
+import 'package:driver_app/Screens/passengerList.dart';
+import 'package:driver_app/Screens/driverList.dart';
 import 'package:driver_app/Screens/start_trip_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+
+import 'package:driver_app/Screens/routesList.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -109,11 +113,13 @@ class _HomeState extends State<Home> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
+                      
+                                                                   //new
                       GestureDetector(
                         onTap: () {
                           Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => const AddRoutes()));
+                              MaterialPageRoute(builder: (context) => const MyListView()));
                         },
                         child: Container(
                           height: 100.0,
@@ -190,7 +196,7 @@ class _HomeState extends State<Home> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => const StartTrip()));
+                              MaterialPageRoute(builder: (context) => const PassengerList()));     //new
                         },
                         child: Container(
                           height: 100.0,
@@ -223,7 +229,7 @@ class _HomeState extends State<Home> {
                         onTap: () {
                           Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => const StartTrip()));
+                              MaterialPageRoute(builder: (context) => const DriverList()));
                         },
                         child: Container(
                           height: 100.0,
@@ -242,7 +248,7 @@ class _HomeState extends State<Home> {
                                 height: 7.0,
                               ),
                               Text(
-                                "Buses",
+                                "Bus Drivers",
                                 style: TextStyle(
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.w500),

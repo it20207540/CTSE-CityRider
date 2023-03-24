@@ -33,7 +33,7 @@ class _LoginState extends State<Login> {
         });
       } else {
         var response = await http.get(Uri.parse(
-            "${currentIp}/driver/login/${controller1.text.toString()}/${controller2.text.toString()}"));
+            "${currentIp}/admin/login/${controller1.text.toString()}/${controller2.text.toString()}"));
         if (response.statusCode == 200) {
           var jsonResponse =
               convert.jsonDecode(response.body) as Map<String, dynamic>;
@@ -43,11 +43,9 @@ class _LoginState extends State<Login> {
             });
 
             final prefs = await SharedPreferences.getInstance();
-            await prefs.setString('name', jsonResponse["data"]["name"]);
-            await prefs.setString('nic', jsonResponse["data"]["nic"]);
-            await prefs.setString('routeNo', jsonResponse["data"]["routeNo"]);
-            await prefs.setString('route', jsonResponse["data"]["route"]);
+            await prefs.setString('username', jsonResponse["data"]["userName"]);
             await prefs.setString('password', jsonResponse["data"]["password"]);
+            
 
             await Navigator.push(
               context,
@@ -112,7 +110,7 @@ class _LoginState extends State<Login> {
               TextField(
                 controller: controller1,
                 decoration: InputDecoration(
-                  hintText: "NIC",
+                  hintText: "User Name",
                   hintStyle: TextStyle(fontSize: 18.0),
                   prefixIcon: Icon(Icons.person_sharp,color: Colors.black,),
                   prefixIconColor: Colors.black87,

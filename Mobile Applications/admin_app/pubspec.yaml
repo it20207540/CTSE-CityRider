@@ -45,6 +45,8 @@ dependencies:
   qr_code_scanner: ^1.0.1
   qr_flutter: ^4.0.0
   google_fonts: ^3.0.1
+  pdf: ^3.6.0
+  open_file: ^3.2.1
 
 dev_dependencies:
   flutter_test:
