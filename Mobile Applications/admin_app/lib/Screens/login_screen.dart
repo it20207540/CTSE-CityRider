@@ -97,7 +97,7 @@ class _LoginState extends State<Login> {
                 height: 12.0,
               ),
               Text(
-                " CITY RIDER",
+                " CITY RIDER ADMIN",
                 style: GoogleFonts.akayaKanadaka(
                     textStyle: TextStyle(
                         fontSize: 30.0,

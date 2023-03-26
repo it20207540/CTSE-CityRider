@@ -193,7 +193,7 @@ class _MyListViewState extends State<MyListView> {
                                           context: context,
                                           builder: (BuildContext context) {
                                             return AlertDialog(
-                                              title: Text("Add new route"),
+                                              title: Text("Edit route"),
                                               content: Form(
                                                 child: Column(
                                                   mainAxisSize:
